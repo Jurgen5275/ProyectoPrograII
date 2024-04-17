@@ -127,9 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abarrote.cpp" />
+    <ClCompile Include="Carne.cpp" />
+    <ClCompile Include="Categoria.cpp" />
+    <ClCompile Include="Embutido.cpp" />
+    <ClCompile Include="Empaque.cpp" />
+    <ClCompile Include="Fecha.cpp" />
+    <ClCompile Include="NoPerecedero.cpp" />
     <ClCompile Include="ProyectoProgra2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abarrote.h" />
+    <ClInclude Include="Carne.h" />
+    <ClInclude Include="Categoria.h" />
+    <ClInclude Include="Embutido.h" />
+    <ClInclude Include="Empaque.h" />
+    <ClInclude Include="Fecha.h" />
+    <ClInclude Include="NoPerecedero.h" />
     <ClInclude Include="Perecedero.h" />
     <ClInclude Include="Producto.h" />
   </ItemGroup>

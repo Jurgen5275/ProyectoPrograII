@@ -1,13 +1,22 @@
 #pragma once
 #include"Producto.h"
-class Perecedero:public Producto
-{
+#include "Fecha.h"
+#include "Categoria.h"
+
+class Perecedero:public Producto{
 public:
-	Perecedero(string cod, string nom, float prec, int exis, string fechV) :Producto(cod, nom, prec, exis), fechaV{fechV} {}
+	Perecedero(string cod, string nom, string descrip, float prec, int exis, Categoria cate, Fecha fechV, bool nac, double pes)
+	 : Producto(cod, nom, descrip, prec, exis, cate, fechV), nacional{nac}, peso{pes}{}
+
 	~Perecedero();
 
+	virtual void mostrarDetalles() = 0;
+
+	virtual float calcularPrecioVenta() = 0;
+
 private:
-	string fechaV;
+	bool nacional;
+	double peso;
 };
 
 
