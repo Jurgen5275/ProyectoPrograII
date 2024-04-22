@@ -9,7 +9,7 @@ public:
 	Perecedero(string cod, string nom, string descrip, float prec, int exis, Categoria cate, Fecha fechV, bool nac, double pes)
 	 : Producto(cod, nom, descrip, prec, exis, cate, fechV), nacional{nac}, peso{pes}{}
 
-	~Perecedero();
+	virtual ~Perecedero();
 
 	virtual void mostrarDetalles() = 0;
 
